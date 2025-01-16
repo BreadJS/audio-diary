@@ -1,0 +1,14 @@
+{
+  "name": "audio-diary",
+  "version": "1.0.0",
+  "description": "A diary with recordings instead of writing. Written in NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "BreadJS",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

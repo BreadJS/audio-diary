@@ -1,0 +1,86 @@
+.mainContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: calc(100% - 80px);
+}
+
+@keyframes recording {
+  0% {
+    background-color: #DC3545;
+  }
+  50% {
+    background-color: #a51f2d;
+  }
+  100% {
+    background-color: #DC3545;
+  }
+}
+
+.mainContainer .record {
+  height: 250px;
+  width: 250px;
+  border-radius: 1000px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  padding:0px;
+  transition:all 1s ease-in-out;
+}
+
+.mainContainer .isRecording {
+  animation: recording 2s infinite;
+}
+
+.mainContainer .record .recordDot {
+  width:80px;
+  height:80px;
+  background-color:#fff;
+  border-radius:1000px;
+  display:block;
+}
+
+.mainContainer .record .pauseStripe {
+  height: 80px;
+  width: 29px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.recordingList {
+  background-color: hsl(210 11% 11% / 1);
+  border-radius: 10px;
+  margin: 0px 15px;
+  padding: 12px 14px;
+}
+
+.calendarDiv {
+  display:flex;
+  justify-content: center;
+  margin-bottom:20px;
+}
+
+.calendarDiv .pika-single {
+  position:relative!important;
+  display: flex;
+  width: 250px;
+  border-radius: 12px;
+  background-color:#191c1f;
+  color:#ffffff;
+  border-color:#191c1f;
+}
+
+.calendarDiv .pika-label {
+  background-color:#191c1f;
+}
+
+.calendarDiv .pika-button {
+  background-color:#24292d;
+  color:#fff;
+}
+
+.calendarDiv .pika-button:hover {
+  background-color:#464c52;
+}

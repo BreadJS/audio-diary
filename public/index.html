@@ -1,0 +1,37 @@
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Audio Diary</title>
+
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.8.2/css/pikaday.min.css">
+</head>
+
+<body>
+  <main>
+
+    <div style="display: flex; justify-content: center; align-items: center; height:80px;">
+      <button class="btn btn-primary previousButton" id="previousButton">Previous Recordings</button>
+    </div>
+    <div id="mainRecorder" class="mainContainer">
+      <button class="btn btn-danger record" id="recordButton"><span class="recordDot"></span></button>
+      <span id="recordingTime">0:00</span>
+      <button class="btn btn-success" id="stopButton" style="margin-top:30px" disabled>Save</button>
+    </div>
+
+    <div id="recordings" style="display:none;">
+      <div id="calendarDiv" class="calendarDiv"></div>
+      <div id="recordingList" class="recordingList"></div>
+    </div>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.8.2/pikaday.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/core.js"></script>
+</body>
+
+</html>
